@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>iQuest Cook Book</title>
+    <meta name="description" content="Homework">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+
+    </style>
+</head>
+<body>
+
+<header class="flex-column">
+    <div class="text-center title">
+        <i class="fa fa-cutlery"></i>
+        iQuest Cook Book
+    </div>
+    <div class="menu">
+        <div class="new-recipe">
+            <a><i class="fa fa-plus"> New recipe</i></a>
+        </div>
+        <div class="select-recipe">
+            <select>
+                <option selected disabled>Select a recipe...</option>
+                <option>Scrambled egg omlette</option>
+            </select>
+        </div>
+    </div>
+</header>
+
+<main>
+    <form action="" method="post">
+        <section class="about">
+            <header>
+                <i class="fa fa-info"> About</i>
+            </header>
+            <section class="content">
+                <div class="flex-column">
+                    <div>Recipe title</div>
+                    <input type="text" name="firstname" placeholder="Your name..">
+                </div>
+                <div class="flex-column">
+                    <div>Description</div>
+                    <textarea placeholder="About the recipe"></textarea>
+                </div>
+                <div class="recipe-options">
+                    <div>
+                        <label>Portions</label>
+                        <select>
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Time(mins)</label>
+                        <select>
+                            <option selected>5</option>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                            <option>30</option>
+                            <option>45</option>
+                            <option>60</option>
+                            <option>90</option>
+                            <option>120</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Dificulty</label>
+                        <select>
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="ingredients flex-column">
+            <header>
+                <div class="form-header">
+                    <i class="fa fa-list"> Ingredients</i>
+                </div>
+            </header>
+            <section class="content">
+                <div class="box">
+                    <div class="ingredients-list">
+                        <div><i class="fa fa-angle-double-right"></i> 300 g brown rice</div>
+                        <div><i class="fa fa-angle-double-right"></i> 2 pc red onions</div>
+                        <div><i class="fa fa-angle-double-right"></i> 1 pc fresh red chilli</div>
+                        <div><i class="fa fa-angle-double-right"></i> 25 g unsalted butter</div>
+                        <div><i class="fa fa-angle-double-right"></i> 6 pc large free-range eggs</div>
+                    </div>
+                    <div class="recipe-options">
+                        <div>
+                            <input type="number" name="quantity" placeholder="Qty." min="1" size="4">
+                        </div>
+                        <div>
+                            <select class="unit">
+                                <option selected disabled>Unit</option>
+                                <option>g</option>
+                                <option>Kg</option>
+                                <option>pc</option>
+                                <option>ml</option>
+                                <option>l</option>
+                                <option>tea spoon(s)</option>
+                            </select>
+                        </div>
+                        <div class="hidden-500-less">of</div>
+                        <div>
+                            <input type="text" name="ingredient" placeholder="Ingredient">
+                        </div>
+                        <i class="fa fa-plus-square"></i>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="steps">
+            <header>
+                <div class="form-header">
+                    <i class="fa fa-list-ol"> Steps</i>
+                </div>
+            </header>
+            <section class="content">
+                <div>
+                    <ol>
+                        <li>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </li>
+                        <li>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </li>
+                        <li>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </li>
+                    </ol>
+                </div>
+                <div class="flex-column">
+                    <div>Step</div>
+                    <textarea placeholder="Step description"></textarea>
+                </div>
+                <div class="buttons">
+                    <button class="btn" type="button"><i class="fa fa-plus-square"></i> Add step</button>
+                </div>
+            </section>
+        </section>
+        <section class="control-buttons">
+            <button class="btn" type="reset"><i class="fa fa-trash-o"></i> Cancel</button>
+            <button class="btn btn-inverted" type="submit"><i class="fa fa-floppy-o"></i> Save recipe</button>
+        </section>
+    </form>
+</main>
+</body>
+</html>
