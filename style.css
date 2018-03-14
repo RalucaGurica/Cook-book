@@ -8,6 +8,10 @@
 body {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -24,7 +28,12 @@ input, textarea, button, select, label {
 }
 
 .flex-column {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    webkit-flex-direction: column;
     flex-direction: column;
 }
 
@@ -43,6 +52,10 @@ main {
     font-size: 1.6em;
 }
 .menu{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     border-bottom:1px solid #d6d4d4;
     font-size: 1.4em;
@@ -151,6 +164,10 @@ form textarea{
 }
 
 .recipe-options{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -182,6 +199,9 @@ input[name="ingredient"]{
 ol{
     padding-left:15px;
 }
+.box ul li{
+    list-style-type: none;
+}
 
 .buttons{
     padding-top: 15px;
@@ -208,6 +228,10 @@ ol{
 /*footer*/
 
 .control-buttons{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     margin:0 auto;
     margin-bottom:50px;
@@ -253,5 +277,8 @@ ol{
     }
     select.unit{
         margin-right: 10px;
+    }
+    form input[type=text], form input[type=number] {
+        padding: 12px 7px;
     }
 }
